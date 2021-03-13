@@ -12,6 +12,8 @@ object UpperTypeBounds {
   class Lion extends Animal {
     override def name: String = "Lion"
   }
+
+  // An upper type bound `T <: A` declares that type variable `T` refers to a sbutype of `A`
   class PetContainer[P <: Pet](p: P) {
     def pet: P = p
   }
